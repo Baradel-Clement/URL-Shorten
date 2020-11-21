@@ -1,0 +1,108 @@
+.shorten-section {
+    width: 1110px;
+    height: 168px;
+    background-color: $dark-blue;
+    z-index: 1;
+    @include absolute-el(-84px, unset, unset ,unset);
+    @include flex(flex, row, space-between, center);
+    border-radius: 10px;
+    padding: 52px 64px;
+}
+
+.shorten-section::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/bg-shorten-desktop.svg);
+    @include absolute-el(0px, unset, unset, 0px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+#linkInput {
+    width: 769px;
+    height: 64px;
+    border-radius: 10px;
+    background: #FFF;
+    padding-left: 32px;
+    outline: none;
+    position: relative;
+    z-index: 3;
+}
+
+#linkInput.error::placeholder {
+    color: red;
+}
+
+.shorten-link-component {
+    width: 100%;
+    height: 72px;
+    background-color: #FFF;
+    border-radius: 5px;
+    @include absolute-el(unset, unset, -100px, 0px);
+    z-index: 2;
+    @extend %flex-between-center;
+    padding: 0px 24px 0px 32px;
+}
+
+.shorten-link-component-wrap {
+    width: 927px;
+    @extend %flex-between-center;
+}
+
+.shorten-link-component-wrap::before {
+    content: '';
+    width: 326px;
+    height: 1px;
+    background-color: rgba(158, 154, 168, 1);
+    @include absolute-el(50px, unset, unset, 0px);
+    z-index: 2;
+    opacity: 0;
+}
+
+.shorten-url {
+    user-select: all;
+}
+
+@media screen and (max-width: 768px) {
+    .shorten-section {
+        width: 327px;
+        height: 160px;
+        @include absolute-el(-80px, unset, unset ,unset);
+        @include flex(flex, column, space-between, center);
+        padding: 24px;
+    }
+    
+    .shorten-section::before {
+        background-image: url(/assets/bg-shorten-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.25;
+    }
+    
+    #linkInput {
+        width: 279px;
+        height: 48px;
+        padding-left: 16px;
+    }
+
+    .shorten-link-component {
+        width: 100%;
+        height: 155px;
+        @include absolute-el(unset, unset, -200px, 0px);
+        @include flex(flex, column, space-between, flex-start);
+        padding: 12px 16px 16px 16px;
+        overflow: hidden;
+    }
+    
+    .shorten-link-component-wrap {
+        width: 295px;
+        height: 78px;
+        @include flex(flex, column, space-between, flex-start)
+    }
+
+    .shorten-link-component-wrap::before {
+        opacity: 0.25;
+    }
+}

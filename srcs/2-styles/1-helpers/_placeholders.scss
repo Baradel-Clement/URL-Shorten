@@ -1,0 +1,25 @@
+@media screen and (min-width: 200px) {
+    %flex-center-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    %flex-between-center {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: row nowrap;
+    }
+  
+    %back-image {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    %transition-0-2s {
+      transition: 0.2s ease-in-out;
+    }
+  }
+  

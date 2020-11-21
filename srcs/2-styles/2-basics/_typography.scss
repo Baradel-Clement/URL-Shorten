@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    color: $light-black;
+}
+
+h1 {
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: -2px;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 33px;
+}
+
+.hero-headline {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.15000000596046448px;
+}
+
+.statistics-headline {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.12272727489471436px;
+}
+
+.button {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.nav-links {   
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.statistics-cards-text > p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.footer-nav-header {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+}
+
+.footer-nav-links {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: -0.234375px;
+}
+
+#linkInput, .link {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.15000000596046448px;
+    opacity: 1;
+}
+
+#linkInput::placeholder {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.15000000596046448px;
+    opacity: 0.5;
+}
+
+.grey {
+    color: $light-grey;
+}
+
+.dark {
+    color: $light-black;
+}
+
+.footer-links {
+    color:rgba(191, 191, 191, 1);
+}
+
+.white {
+    color: $white;
+}
+
+.blue {
+    color: $light-blue;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {   
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    h1 {
+        font-size: 42px;
+        line-height: 48px;
+        letter-spacing: -1.0499999523162842px;
+    }
+
+    h2 {
+        font-size: 28px;
+        line-height: 48px;
+        letter-spacing: -0.699999988079071px;
+    }
+
+    .hero-headline {
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.12272727489471436px;
+    }
+
+    .statistics-headline {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.1090909093618393px;
+    }
+
+    .statistics-cards-text > p {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    #linkInput, .link {
+        font-size: 16px;
+        line-height: 36px;
+        letter-spacing: 0.11999999731779099px;
+    }
+    
+    #linkInput::placeholder {
+        font-size: 16px;
+        line-height: 36px;
+        letter-spacing: 0.11999999731779099px;
+    }
+}

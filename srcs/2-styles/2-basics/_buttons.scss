@@ -1,0 +1,66 @@
+.button {
+    cursor: pointer;
+    background-color: $light-blue;
+    border-radius: 28px;
+    @extend %flex-center-center;
+    @extend %transition-0-2s;
+}
+
+.sign-up-button {
+    width: 105px;
+    height: 40px;
+    font-size: 15px;
+}
+
+.shorten-it-button {
+    width: 188px;
+    height: 64px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+}
+
+.get-started-button {
+    width: 197px;
+    height: 56px;
+}
+
+.copy-button {
+    width: 103px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.copy-button.active {
+    background-color: $dark-blue;
+}
+
+.copy-button.active:hover {
+    background-color: $dark-blue;
+}
+
+.button:hover {
+    background-color: rgba(154, 227, 227, 1);
+    @extend %transition-0-2s;
+}
+
+@media screen and (max-width: 768px) {
+    .sign-up-button {
+        width: 279px;
+        height: 48px;
+        font-size: 18px;
+    }
+
+    .shorten-it-button {
+        width: 279px;
+        height: 48px;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .copy-button {
+        width: 295px;
+        font-size: 16px;
+    }
+}

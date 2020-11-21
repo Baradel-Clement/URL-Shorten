@@ -1,0 +1,71 @@
+footer {
+    width: 100vw;
+    height: 310px;
+    @extend %flex-center-center;
+    background-color: $light-black;
+}
+
+.footer-wrap {
+    width: 1111px;
+    height: 167px;
+    @include flex(flex, row, space-between, flex-start);
+}
+
+.footer-nav {
+    @include flex(flex, column, flex-start, flex-start)
+}
+
+.footer-wrap > img:nth-child(1) {
+    margin-right: 147px;
+}
+
+.footer-nav > p:not(:first-child, :last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-nav > p:not(:first-child) {
+    cursor: pointer;
+    @extend %transition-0-2s;
+}
+
+.footer-nav > p:not(:first-child):hover {
+    color: $light-blue;
+    @extend %transition-0-2s;
+}
+
+.footer-nav > p:first-child {
+    margin-bottom: 22px;
+}
+
+.footer-social {
+    width: 168px;
+    height: 24px;
+    @extend %flex-between-center;
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        height: 776px;
+    }
+    
+    .footer-wrap {
+        width: 168px;
+        height: 666px;
+        @include flex(flex, column, space-between, center);
+    }
+    
+    .footer-nav {
+        @include flex(flex, column, flex-start, center);
+        width: 112px;
+    }
+    
+    .footer-wrap > img:nth-child(1) {
+        margin-right: unset;
+    }
+    
+    
+    .footer-social {
+        width: 168px;
+        height: 24px;
+    }
+}
